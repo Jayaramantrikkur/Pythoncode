@@ -1,0 +1,22 @@
+# sample program
+
+year = int(input("Enter a year: "))
+
+#
+# Write your code here.
+#
+
+if year < 1582:    # year not within the grerorian period
+   print ("Not within the Gregorian calender period")
+elif  year % 4 > 0:   #year is not divisible by 4:
+    print ( "Common Year")
+
+elif year % 100 > 0 : # year not divisible by 100
+    print (("leap year"))
+
+elif year % 400 > 0:
+    print ("Commonn year")
+    
+else:
+     
+    print ("Leap year")
